@@ -1,13 +1,13 @@
-Class Person
+def full_name(person)
+  "#{person[:first_name]} #{person[:last_name]}"
 end
 
-Kristan = Person.new
-Kristan => #Person: 123456789
-
-
-Christopher = Person.new
-Christopher => #Person: 12345678
-
-Chrisopher = Kristan =>#false: because both are just same they're only names.
-
-Christopher = Person =>#true: Christopher is a human.
+class Person
+  alan_kay = Person
+  attr_accessor :first_name, :last_name
+end
+  
+  def full_name
+    "#{self.first_name} #{self.last_name}"
+  end
+end  

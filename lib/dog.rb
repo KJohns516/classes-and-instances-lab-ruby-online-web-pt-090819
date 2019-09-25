@@ -1,16 +1,11 @@
-class Dog 
+class Dog
+  Dog.new
+"#{Dog[:name_of_dog]}"
 end
-  
+
+class Dog
 Fido = Dog.new
-Fido => #<Dog:windows file explorer/documents/dogphotos
-
 Snoopy = Dog.new
-Snoopy => #<Dog:windows file explorer/documents/dogphotos
-
 Lassie = Dog.new
-Fido => #<Dog:winodws file explorer/documents/dog dogphotos
-
-Lassie = Snoopy =>#false - these dogs are not the same.
-
-Fido = Dog =>#<Dog: True - Fido is a dog.
+attr_accessor - :name_of_dog
 end

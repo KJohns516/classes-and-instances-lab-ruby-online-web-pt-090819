@@ -5,7 +5,6 @@ describe 'Dog' do
     if file_includes_class_definition('lib/dog.rb','Dog')
       expect(defined?(Dog)).to be_truthy
       expect(Dog).to be_a(Class)
-    end
   end
 
   context 'variables defined in lib/dog.rb' do
@@ -24,7 +23,6 @@ describe 'Dog' do
       expect(lassie).to be_a(Dog)
     end
   end
-end
 
 describe 'Person' do
   it 'is defined within lib/person.rb' do
